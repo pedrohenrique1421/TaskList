@@ -15,6 +15,8 @@ header("Expires: 0");
 
 <head>
     <title>TaskList</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
@@ -40,7 +42,8 @@ header("Expires: 0");
         echo $tarefa['concluida'] ? " ✅" : " ❌";
 
         // Botões de ação
-        echo " 
+        echo "
+        <br>
         <form style='display:inline;' method='post' action='../PHP/concluir_tarefa.php'>
             <input type='hidden' name='id' value='{$tarefa['id']}'>
             <button type='submit'>Concluir</button>

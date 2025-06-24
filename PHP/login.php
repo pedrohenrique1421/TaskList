@@ -47,7 +47,6 @@ if ($resultado->num_rows === 1) {
     }
 } else {
     // Debug opcional
-    echo "Email não encontrado: " . $email;
+    header("Location: ../PHP_Pages/erro.php?erro=email_nao_encontrado");
     exit;
 }
-?>

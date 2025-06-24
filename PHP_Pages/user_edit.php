@@ -12,6 +12,7 @@ if (!isset($_SESSION['usuario_id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskList</title>
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
@@ -24,7 +25,7 @@ if (!isset($_SESSION['usuario_id'])) {
     </form>
     <br><br>
     <form method="post" action="../PHP/excluir_conta.php" onsubmit="return confirm('Tem certeza que deseja excluir sua conta? Essa ação é irreversível!');">
-        Excluir Conta: <button type="submit" style="color: red;">Excluir Conta</button>
+        Excluir Conta: <button type="submit" style="background-color: #f00;">Excluir Conta</button>
     </form>
     <br>
     <button onclick="history.back()">Voltar</button>
